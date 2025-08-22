@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MCA Time Table - August 2025</title>
+  <style>
+    :root {
+      --primary-color: #2962ff;
+      --secondary-color: #0039cb;
+      --hover-color: #e3f2fd;
+      --border-radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      text-align: center;
+      padding: 20px;
+      margin: 0 0 30px 0;
+      font-size: 2em;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: var(--primary-color);
+      border-radius: 2px;
+    }
+
+    .room {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 25px;
+      padding: 10px;
+      background: #f8f9fa;
+      border-radius: var(--border-radius);
+      border: 1px dashed #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 40px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 15px 10px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      transition: all 0.3s ease;
+    }
+
+    th {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      border: none;
+    }
+
+    td:first-child {
+      background: #f8f9fa;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    tbody tr:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    td:not(:first-child) {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    /* Subject styling */
+    td:not(:first-child) > :first-child {
+      font-weight: bold;
+      color: #2962ff;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Professor name styling */
+    td:not(:first-child) br + :not(br) {
+      color: #666;
+      font-size: 0.85em;
+      font-style: italic;
+    }
+
+    /* Library cell styling */
+    td:contains('Library') {
+      background: linear-gradient(45deg, #e8f5e9, #c8e6c9);
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    /* Empty cell styling */
+    td:contains('—') {
+      background: #fafafa;
+      color: #bdbdbd;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      
+      th, td {
+        padding: 10px 5px;
+        font-size: 0.8em;
+      }
+    }
+
+    /* Animation for hover effects */
+    td:not(:first-child):hover {
+      background-color: var(--hover-color);
+      transform: scale(1.02);
+      z-index: 1;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Time column special styling */
+    td:first-child {
+      position: relative;
+      overflow: hidden;
+    }
+
+    td:first-child::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: var(--primary-color);
+    }
+     .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      position: absolute;
+      left: 0;
+      top: 5%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    /* Adjust h2 margin for logo */
+    .header-container h2 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+    
+    
+    <div class="header-container">
+        <img src="logo.png" alt="Institution Logo" class="logo">
+
+  <h2>MCA 3rd Semester (2024–2026)</h2>
+  <div class="room">Room No.: 02 (Technical Block)</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Time / Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>09:10 AM – 10:00 AM</td>
+        <td>MC303 Visual Prog.<br>Alok Kumar</td>
+        <td>MC303 Visual Prog.<br>Ramesh Kumar</td>
+        <td>MC303 Visual Prog.<br>Alok Kumar</td>
+        <td>MC303 Visual Prog.<br>Ramesh Kumar</td>
+        <td>MCPE305 C&G Comp<br>Raju Kumar</td>
+        <td>MCPE305 C&G Comp<br>Raju Kumar</td>
+      </tr>
+      <tr>
+        <td>10:00 AM – 10:50 AM</td>
+        <td>MCPE305 C&G Comp<br>Arvind Chaubey</td>
+        <td>MCPE305 C&G Comp<br>Arvind Chaubey</td>
+        <td>MCPE205 Big Data A.<br>Shakti Pandey</td>
+        <td>MC301 Soft. Engg.<br>Sanjay Kr.</td>
+        <td>MCPE205 Big Data A.<br>Shakti Pandey</td>
+        <td>MC302 Machine L.<br>Shambhu K Singh</td>
+      </tr>
+      <tr>
+        <td>10:50 AM – 11:40 AM</td>
+        <td>MC301 Soft. Engg.<br>Savyasachi</td>
+        <td>MC304 Web Tech.<br>Divya</td>
+        <td>MC301 Soft. Engg.<br>Sanjay Kr.</td>
+        <td>MC302 Machine L.<br>Vijay Kr.</td>
+        <td>MC304 Web Tech.<br>Santosh Kr. Jha</td>
+        <td>MC304 Web Tech.<br>Santosh Kr. Jha</td>
+      </tr>
+      <tr>
+        <td>12:10 PM – 01:00 PM</td>
+        <td>MCPE205 Big Data A.<br>Ankit Kumar</td>
+        <td>MCPE205 Big Data A.<br>Ankit Kumar</td>
+        <td>MC302 Machine L.<br>Shambhu K Singh</td>
+        <td>MC304 Web Tech.<br>Santosh Kr. Jha</td>
+        <td>MC302 Machine L.<br>Vijay Kr.</td>
+        <td>MC301 Soft. Engg.<br>Savyasachi</td>
+      </tr>
+      <tr>
+        <td>01:50 PM – 02:40 PM</td>
+        <td>Library</td>
+        <td>—</td>
+        <td>Library</td>
+        <td>—</td>
+        <td>Library</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
